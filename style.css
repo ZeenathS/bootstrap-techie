@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+	--secondary-bg-colour: #e8e6f7;
+}
+
+html, body {
+  font-family: 'Noto Sans Display';
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.hero-img {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(103, 16, 242, 0.699), rgb(103, 16, 242)), url("./Techie/img/hero-bg.jpg");
+}
+
+.styled-points {
+  list-style: url(./Techie/img/check-mark.png);
+}
+
+.purple-gradient {
+  background-image: linear-gradient(to right, rgb(97, 61, 239), rgb(119, 42, 219));
+  border: none;
+  border-radius: 5px;
+}
+
+.counts {
+  background-image: url(./Techie/img/counts-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.a {
+  margin-bottom: 0;
+}
+
+.testimony {
+  width: 320px;
+}
+
+.testimony > .testimony-body {
+  padding-bottom: 2.2rem !important;
+  quotes: \201C \201E;
+}
+
+.testimony > .testimony-body:before {
+  content: open-quote;
+}
+
+.testimony > .testimony-body:after {
+  content: close-quote;
+}
+
+.testimony > .testimony-body:before, .testimony > .testimony-body:after {
+  display: inline-block;
+  position: relative;
+  top: 18px;
+  height: 0.8rem;
+  color: #b1a9fc;
+  font-size: 2.8rem;
+  line-height: 0.01rem;
+}
+
+.testimony > .testimony-footer {
+  margin-top: -2rem;
+  line-height: 1.2rem;
+}
+
+.testimony > .testimony-footer > .testimony-icon > img {
+  height: 72px; 
+width: 72px;
+border-radius: 100px;
+outline: white 5px solid;
+  filter: drop-shadow(0 0 2px rgba(206, 137, 137, 0.164));
+}
+
+.testimony > .testimony-footer > .testimony-name {
+  color: #334a61;
+}
+
+.testimony > .testimony-footer > .testimony-title {
+  color: #949494;
+  font-size: 0.8rem;
+}
+
+.testimony-indicators > button[data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px !important;
+background: transparent;
+  outline: 1px solid #5846f9;
+  border: none;
+  opacity: 1 !important;
+  transition: background-color ease-in-out 0.6s;
+}
+
+.testimony-indicators > button[data-bs-target][class="active"] {
+background: #5846f9;
+}
